@@ -1,0 +1,10 @@
+{
+  "name": "content-outline-builder",
+  "description": "Build publish-ready content outlines for blog posts and articles, or audit an existing outline for missing components.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ifedolapo Ojo",
+    "url": "https://www.linkedin.com/in/ifedolapo-ojo"
+  },
+  "license": "MIT"
+}

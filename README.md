@@ -2,7 +2,7 @@
 
 A Claude skill that builds publish-ready content outlines for blog posts and articles. It can also audit an outline you already have and fill in what's missing.
 
-A good outline is not a table of contents. It's the document that lets someone else draft the piece without guessing, and lets a reviewer push back on the strategy before anyone writes 3,000 words. This skill holds every outline to that standard.
+A good outline is the document that lets someone else draft the piece without guessing, and lets a reviewer push back on the strategy before anyone writes 3,000 words. This skill holds every outline to that standard.
 
 ---
 
@@ -96,7 +96,21 @@ content-outline-builder/
 
 ### 1. Install
 
-**Claude Code:** copy the skill folder into your skills directory.
+**Claude (web)**
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Ifedolapo-9/content-outline-builder.git
+   ```
+2. Open `content-outline-builder/skills/` and zip the `content-outline-builder` folder inside it.
+3. Go to [claude.ai](https://claude.ai), click your profile, then click **Skills**.
+4. Click **Upload** and select the zip.
+
+Zip only the `content-outline-builder` folder inside `skills/`, not the whole repo. Claude needs `SKILL.md` directly inside the folder you upload.
+
+**Claude Code**
+
+Clone the repo, then copy the skill folder into your skills directory:
 
 ```bash
 git clone https://github.com/Ifedolapo-9/content-outline-builder.git
@@ -110,11 +124,15 @@ cp -r content-outline-builder/skills/content-outline-builder your-project/.claud
 
 Restart Claude Code. The skill loads on its own when your request matches it.
 
-**Claude.ai:** zip the `skills/content-outline-builder` folder, then upload it under **Settings → Capabilities → Skills**.
-
 ### 2. Ask for an outline
 
-You don't need to name the skill. Describe what you want:
+On Claude web, you can call the skill by name in your prompt, for example:
+
+> Use the content-outline-builder skill to build an outline for the keyword "web scraping with python".
+
+You can also skip the name and just describe the task. As long as the skill is switched on in your Skills settings, Claude loads it automatically when you ask for an outline, a content brief or an outline audit.
+
+In Claude Code, you can run it directly with `/content-outline-builder`.
 
 **Build a new outline**
 

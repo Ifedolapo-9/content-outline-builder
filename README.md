@@ -103,7 +103,7 @@ content-outline-builder/
    git clone https://github.com/Ifedolapo-9/content-outline-builder.git
    ```
 2. Open `content-outline-builder/skills/` and zip the `content-outline-builder` folder inside it.
-3. Go to [claude.ai](https://claude.ai), click your profile, then click **Skills**.
+3. Go to [claude.ai](https://claude.ai), click your profile, click **Settings**, then click **Skills**.
 4. Click **Upload** and select the zip.
 
 Zip only the `content-outline-builder` folder inside `skills/`, not the whole repo. Claude needs `SKILL.md` directly inside the folder you upload.
